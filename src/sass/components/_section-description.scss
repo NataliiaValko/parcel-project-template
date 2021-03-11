@@ -1,25 +1,30 @@
 .section-description {
   font-family: DM Sans;
-  font-weight: bold;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.75;
   letter-spacing: 0.04em;
-  color: var(--light-text-color);
+  color: var(--dark--text-color);
 
-  .making & {
-    font-weight: 500;
-    color: var(--dark--text-color);
+  .products & {
+    font-weight: bold;
+    color: var(--light-text-color);
   }
 
   .components & {
+    font-weight: bold;
     letter-spacing: 0.02em;
-    color: var(--dark--text-color);
   }
 
   .testimonials &,
   .locations & {
     line-height: 1.875;
     font-weight: 500;
-    color: var(--dark--text-color);
+  }
+
+  .footer & {
+    letter-spacing: 0.02em;
+    line-height: 1.875;
+    font-weight: bold;
   }
 }
