@@ -1,0 +1,25 @@
+.section-description {
+  font-family: DM Sans;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.75;
+  letter-spacing: 0.04em;
+  color: var(--light-text-color);
+
+  .making & {
+    font-weight: 500;
+    color: var(--dark--text-color);
+  }
+
+  .components & {
+    letter-spacing: 0.02em;
+    color: var(--dark--text-color);
+  }
+
+  .testimonials &,
+  .locations & {
+    line-height: 1.875;
+    font-weight: 500;
+    color: var(--dark--text-color);
+  }
+}
