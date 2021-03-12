@@ -1,21 +1,26 @@
 .footer {
+  position: relative;
   background-color: var(--second-bgc);
 }
+
+
+.container.outline {
+  outline: 1px solid red;
+}
 .footer__wrapper {
-  display: flex;
-  justify-content: space-between;
 }
 
 .footer__slogan {
-  max-width: 478px;
+  margin-bottom: 43px;
 }
 
 .footer__slogan--small-text {
+  margin-bottom: 17px;
+
   font-family: Titan One;
   font-weight: 400;
-  font-size: 30px;
-  line-height: 1.33;
-  letter-spacing: 0.04em;
+  font-size: 18px;
+  line-height: 21px;
   text-transform: uppercase;
 
   color: var(--text-label-color);
@@ -24,29 +29,32 @@
 .footer__slogan--large-text {
   font-family: Titan One;
   font-weight: 400;
-  font-size: 58px;
-  line-height: 1.14;
-  letter-spacing: 0.06em;
+  font-size: 34px;
+  line-height: 39px;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
 
   color: var(--accent-primary-color);
 }
 
 .footer__contacs {
+  margin-bottom: 65px;
 }
 
 .social-networks {
   display: flex;
+  justify-content: flex-end;
 }
 
 .social-networks__item:not(:last-child) {
-  margin-right: 24px;
+  margin-right: 28px;
+  margin-bottom: 46px;
 }
 
 .social-networks__btn {
   display: inline-flex;
-  width: 34px;
-  height: 34px;
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
   align-items: center;
   justify-content: center;
@@ -68,27 +76,44 @@
 .footer__contacs--appeal {
   font-family: DM Sans;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 12px;
   line-height: 1.86;
 
-  letter-spacing: 0.02em;
+  margin-left: 10px;
 
   color: #000000;
+  display: inline;
 }
 
 .footer__contacs--tel {
   color: var(--accent-primary-color);
+  display: inline;
 }
 
 .footer__copyright {
-  border-top: 1px solid #e1e1e1;
-  font-family: DM Sans;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 1.86;
+  max-width: 140px;
+  padding-bottom: 25px;
+}
 
-  letter-spacing: 0.02em;
+.footer__copyright::before{
+  content: "";
+      
+      position: absolute;
+      left: 0;
+      bottom: 64px;
+      width: 100% ;
+      
+      border: 1px solid #E1E1E1;
+      
+}
+
+.footer__copyright--text {
+  font-family: DM Sans;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.52;
+
   text-align: center;
 
   color: var(--copyright-text-color);
