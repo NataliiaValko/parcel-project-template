@@ -1,0 +1,99 @@
+<!-- Link Swiper's CSS -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+<section>
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="slider-block">
+          <img
+            class="slider__avatar"
+            src="../src/images/7-testimonials/testimonials-1- 1x.jpg"
+            alt=""
+          />
+          <div class="slider__quote">
+            <div class="slider__text">
+              <p>
+                Nullam viverra consectetuer. Quisque cursus et, porttitor risus.
+                Aliquam sem. In hendrerit nulla quam nunc, accumsan congue.
+                Lorem ipsum primis in nibh vel risus.
+              </p>
+            </div>
+            <div class="slider-adress">
+              <p class="slider__adress-text">Emily, Los Angeles</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-slide">
+        <div class="slider-block">
+          <img
+            class="slider__avatar"
+            src="../src/images/7-testimonials/testimonials-1- 1x.jpg"
+            alt=""
+          />
+          <div class="slider__quote">
+            <div class="slider__text">
+              <p>
+                Nullam viverra consectetuer. Quisque cursus et, porttitor risus.
+                Aliquam sem. In hendrerit nulla quam nunc, accumsan congue.
+                Lorem ipsum primis in nibh vel risus.
+              </p>
+            </div>
+            <div class="slider-adress">
+              <p class="slider__adress-text">Angela, Kyiv</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-slide">
+        <div class="slider-block">
+          <img
+            class="slider__avatar"
+            src="../src/images/7-testimonials/testimonials-1- 1x.jpg"
+            alt=""
+          />
+          <div class="slider__quote">
+            <div class="slider__text">
+              <p>
+                Nullam viverra consectetuer. Quisque cursus et, porttitor risus.
+                Aliquam sem. In hendrerit nulla quam nunc, accumsan congue.
+                Lorem ipsum primis in nibh vel risus.
+              </p>
+            </div>
+
+            <div class="slider-adress">
+              <p class="slider__adress-text">Olga, Odessa</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="slider-point">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
+
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper('.swiper-container', {
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+      renderBullet: function (index, className) {
+        return '<span class="' + className + '"></span>';
+      },
+    },
+  });
+</script>
