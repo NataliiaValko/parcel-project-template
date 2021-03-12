@@ -1,0 +1,95 @@
+.footer {
+  background-color: var(--second-bgc);
+}
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__slogan {
+  max-width: 478px;
+}
+
+.footer__slogan--small-text {
+  font-family: Titan One;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: var(--text-label-color);
+}
+
+.footer__slogan--large-text {
+  font-family: Titan One;
+  font-weight: 400;
+  font-size: 58px;
+  line-height: 1.14;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: var(--accent-primary-color);
+}
+
+.footer__contacs {
+}
+
+.social-networks {
+  display: flex;
+}
+
+.social-networks__item:not(:last-child) {
+  margin-right: 24px;
+}
+
+.social-networks__btn {
+  display: inline-flex;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--social-bgc);
+
+  transition: background-color $time-main $timing-function-main;
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-primary-color);
+  }
+}
+
+.social-networks__img {
+  // fill: var(--social-bgc);
+}
+
+.footer__contacs--appeal {
+  font-family: DM Sans;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.86;
+
+  letter-spacing: 0.02em;
+
+  color: #000000;
+}
+
+.footer__contacs--tel {
+  color: var(--accent-primary-color);
+}
+
+.footer__copyright {
+  border-top: 1px solid #e1e1e1;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.86;
+
+  letter-spacing: 0.02em;
+  text-align: center;
+
+  color: var(--copyright-text-color);
+}
